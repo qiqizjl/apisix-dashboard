@@ -31,7 +31,7 @@ jobs:
 
       - name: Cache or restore node_modules
         id: node_modules_cache_id
-        uses: actions/cache@v2
+        uses: actions/cache@v2.1.4
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
