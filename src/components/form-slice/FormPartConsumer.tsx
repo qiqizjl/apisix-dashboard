@@ -28,7 +28,7 @@ export const FormSectionPluginsOnly = () => {
   const { t } = useTranslation();
   return (
     <FormSection legend={t('form.plugins.label')}>
-      <FormItemPlugins name="plugins" />
+      <FormItemPlugins name="plugins" schema="consumer_schema" />
     </FormSection>
   );
 };
